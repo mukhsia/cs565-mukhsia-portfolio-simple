@@ -1,10 +1,15 @@
 head, body, footer {
     color: whitesmoke;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .background1, footer {
     background: midnightblue;
+}
+
+header {
+    font-family:  'Times New Roman', Times, Georgia, serif;
 }
 
 /*Tetradic colors to midnight blue*/
