@@ -1,0 +1,21 @@
+head, body, footer {
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.background1, footer {
+    background: midnightblue;
+}
+
+/*Tetradic colors to midnight blue*/
+.background2 {
+    background: #704519;
+}
+
+.background3 {
+    background: #707019;
+}
+
+.background4 {
+    background: #701970;
+}
