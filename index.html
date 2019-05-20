@@ -50,13 +50,18 @@
             <h3>PSU-Crypt</h3>
             <div class="row">
               <div class="col-sm-2">Description:</div>
-              <div class="col-md-6"><p></p></div>
+              <div class="col-md-6"><p>PSU-CRYPT is a C++ program that runs a Feistel cipher block encryption algorithm based on Twofish by Bruce Schneier, John Kelsey, Doug Whiting, David Wagner, Chris Hall, and SKIPJACK by the NSA - on a 64-bit block with a 80-bit key.</p></div>
             </div>
             <div class="row">
               <div class="col-sm-2">Responsibilities:</div>
               <div class="col-md-6">              
                 <ul>
-                  <li></li>
+                  <li>Implement an encryption mode and the encryption function</li>
+                  <li>Implement a decryption mode and the decryption function</li>
+                  <li>Add different key and plaintext/ ciphertext input options with different input mode for plaintext when in decryption mode (formats: binary string, hex string, ASCII string)</li>
+                  <li>Create an encryption and decryption subkey generator, and the key scheduler</li>
+                  <li>Write the F-function and G-function for the encrypt/ decrypt process</li>
+                  <li>Add or remove ANSI X9.23 Padding from decrypted ciphertext and plaintext to be encrypted</li>
                 </ul>
               </div>
             </div>
@@ -71,7 +76,7 @@
               <h3>PSU-PUBKEYCRYPT</h3>
               <div class="row">
                 <div class="col-sm-2">Description:</div>
-                <div class="col-md-6"><p>Write a program for a public key encryption scheme. The system must consist of the following three components: A 32-bit public & private key generator, 
+                <div class="col-md-6"><p>PSU-PUBKEYCRYPT is a C++ program for a public key encryption scheme. The system must consist of the following three components: A 32-bit public & private key generator, 
                   An Ascii plaintext to ciphertext encryption sub-program, 
                   A ciphertext to Ascii plaintext decryption sub-program.</p></div>
               </div>
