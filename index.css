@@ -5,22 +5,22 @@ head, body, footer {
 }
 
 .background1, footer {
-    background: midnightblue;
+    background: #0f2862;
 }
 
 header {
     font-family:  'Times New Roman', Times, Georgia, serif;
 }
 
-/*Tetradic colors to midnight blue*/
+/*Color scheme from the following article https://hookagency.com/website-color-schemes/*/
 .background2 {
-    background: #704519;
+    background: #4f5f76;
 }
 
 .background3 {
-    background: #707019;
+    background: #091f36;
 }
 
 .background4 {
-    background: #701970;
+    background: #9e363a;
 }
