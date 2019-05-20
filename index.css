@@ -6,6 +6,7 @@ head, body, footer {
 
 .background1, footer{
     background: #0f2862;
+    clear: both;
 }
 
 header {
@@ -43,3 +44,10 @@ header {
     border-radius: 0;
     color:#fff;
 }
+
+/*Avoid overflow*/
+.tab-pane{
+    height:300px;
+    overflow-y:scroll;
+    width:100%;
+  }
