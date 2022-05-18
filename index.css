@@ -1,53 +1,51 @@
-head, body, footer {
-    color: whitesmoke;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-.background1, footer{
+/*=== Navbar, Footer ===*/
+.background-navbar, footer{
     background: #0f2862;
     clear: both;
 }
 
+.navbar-resume{
+    color: white;
+}
+
+/*=== Footer text ===*/
+
+footer {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*=== html padding at bottom accounting for fixed bottom footer space ===*/
+html { 
+    margin-bottom: 65px 
+}
+
+/*=== Header/ Jumbotron===*/
+
+.background-jumbotron {
+    background: rgb(42, 174, 235);
+}
+
+/*=== Jumbotron text ===*/
 header {
     font-family:  'Times New Roman', Times, Georgia, serif;
+    color: rgb(0, 0, 0);
 }
 
-/*Color scheme from the following article https://hookagency.com/website-color-schemes/ */
-.background2 {
-    background: #4f5f76;
+/*=== Body ===*/
+
+/*=== Background color control for color scheme experimentation ===*/
+.background-page {
+    background: white;
 }
 
-.background3 {
-    background: #091f36;
+.background-body {
+    background: white;
 }
 
-.background4 {
-    background: #9e363a;
+/*=== Body text ===*/
+body{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/*Tabs override*/
-.nav-tabs{
-    background-color:#0f2862;
-}
-.tab-content{
-    background-color:#0f2862;
-    color:#fff;
-    padding:5px
-}
-.nav-tabs > li > a{
-    border: medium none;
-}
-.nav-tabs > li > a:hover{
-    background-color: #303136 !important;
-    border: medium none;
-    border-radius: 0;
-    color:#fff;
-}
-
-/*Avoid overflow*/
-.tab-pane{
-    height:300px;
-    overflow-y:scroll;
-    width:100%;
-  }

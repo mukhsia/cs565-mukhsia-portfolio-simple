@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Bootstrap stylesheet, js, and JQuery -->
+<link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="../src/jquery/jquery.min.js"></script>
+<script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- css file -->
+<link href="../index.css" rel="stylesheet">
+
+<!-- Tab Title -->
+<head>
+    <title>Andre Mukhsia's Portfolio</title>
+</head>
+
+
+<body class="background-page">
+    <!-- Navbar Header -->
+    <nav class="navbar navbar-dark background-navbar">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html">Andre Mukhsia</a>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container background-body">
+        <div class="row py-5">
+            <h3>Battlecode 2019 Bot</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">Description:</div>
+            <div class="col-md-6"><p>Developed a javascript Battlecode 2019 bot with an aggression-focused strategy in a development team of size three. 
+                Used an Agile-like development process with 2-week sprints for 4 sprints total, playing against a reference bot at the end of each sprint.</p></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">Responsibilities:</div>
+            <div class="col-md-6">              
+            <ul>
+                <li>Setup and manage Slack and Trello board. Integrate Github for Slack, Trello for Slack, Travis CI, and Coveralls</li>
+                <li>Setup Travis CI and Coveralls for automated build and code coverage report generation</li>
+                <li>Wrote batch script for building and testing on Windows environment</li>
+                <li>Implemented Bot Combat helper functions (filter visible units on distance, team, (un)attackable range, etc.)</li> 
+                <li>Implemented Bot communication helper function (Report enemy Castle destruction & Communicate next target location)</li> 
+                <li>Implemented Bot movement helper functions (Calculate enemy castle location, determine direction, etc.)</li>
+                <li>Initial naive farthest valid move movement implementation</li> 
+                <li>Crusader and Prophet bot design</li>
+                <li>Defender, Attacker, and Destroyer sub-role design and implementations for Crusader and Prophet bots</li>
+                <li>Implemented Attacker sub-role behaviors towards attacking enemy castles and units en-route</li>
+                <li>Implemented Defender sub-role behavior of guarding the castle against enemy bots</li>
+                <li>Added role switching from defender to attacker when the number of nearby allied Crusader/ Prophet bots exceeds a certain threshold</li>
+                <li>Implemented Destroyer sub-role behavior to move and secure neutral resources, eliminating and preventing additional enemy resource gathering attempts</li>
+                <li>Designed and implemented Crusader-vs-Prophet, Crusader-vs-Crusader and Prophet-vs-Crusader micro strategies based on visible enemies, engagement distance, and movement speed</li>
+                <li>Write unit tests using mocha, chai, and a battlecode 2019 game mock framework developed by another team member</li>
+            </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">Resources:</div>
+            <div class="col-md-6"><a href="https://github.com/CS554-software-engineering-groupProject/battlecodeProject">Bot Github</a> | <a href="https://battlecode.org/">Battlecode site</a></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fixed-bottom py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="m-2 text-left">Copyright &copy; Mukhsia 2020</p>
+                </div>
+                <div class="col-md-6">  
+                    <p class="m-2 text-right">Email: andre.n.mukhsia at gmail dot com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

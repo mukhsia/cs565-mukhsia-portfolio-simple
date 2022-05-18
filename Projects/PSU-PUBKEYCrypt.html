@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Bootstrap stylesheet, js, and JQuery -->
+<link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="../src/jquery/jquery.min.js"></script>
+<script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- css file -->
+<link href="../index.css" rel="stylesheet">
+
+<!-- Tab Title -->
+<head>
+    <title>Andre Mukhsia's Portfolio</title>
+</head>
+
+
+<body class="background-page">
+    <!-- Navbar Header -->
+    <nav class="navbar navbar-dark background-navbar">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html">Andre Mukhsia</a>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container background-body">
+        <div class="row py-5">
+            <h3>PSU-PUBKEYCRYPT</h3>
+        </div>
+        <div class="row py-2">
+            <div class="col-sm-2">Description:</div>
+            <div class="col-md-6"><p>PSU-PUBKEYCRYPT is a C++ program for a public key encryption scheme. The system must consist of the following three components: A 32-bit public & private key generator, 
+                An Ascii plaintext to ciphertext encryption sub-program, 
+                A ciphertext to Ascii plaintext decryption sub-program.</p></div>
+        </div>
+        <div class="row py-2">
+            <div class="col-sm-2">Generator:</div>
+            <div class="col-md-6"><p>Prompt the user for a random number with which to seed a random number generator. Compute e2 = g^d mod p. Output a public-key p g e2 and the corresponding private key p g d. 
+              These keys should be output into two files: pubkey.txt and prikey.txt. The format of these files should be: the first line of the file contains the integer key values and they are only separated by a space, as: p g d.</p></div>
+        </div>
+        <div class="row py-2">
+            <div class="col-sm-2">Encryption:</div>
+            <div class="col-md-6"><p>As input, the program take as plaintext a standard text file (call the file ptext.txt) and a public-key p g e2 contained in the file pubkey.txt. 
+              A value k is randomly picked from {0,..., p-1}, and is used to compute the following C1 = g∙k mod p
+              C2 = e2∙k∙m mod p
+              Output the ciphertext as pairs of integers C1 and C2 to a text file called ctext.txt. So if the message M = m1 m2 m3… mn then each mi will give a pair C1 and C2. For the graders convenience you can also print this to the screen.</p></div>
+        </div>
+        <div class="row py-2">
+            <div class="col-sm-2">Decryption:</div>
+            <div class="col-md-6"><p>As input, the program take as ciphertext a standard text file (ctext.txt) containing integer pairs C1 and C2 and a private-key p g d contained in the file prikey.txt.
+                Output the decryption of the ciphertext into a file called dtext.txt.
+            </p></div>
+        </div>
+        <div class="row py-2">
+            <div class="col-sm-2">Responsibilities:</div>
+            <div class="col-md-6">              
+              <ul>
+                <li>Implement a square-and-multiply function for the mod-math computation</li>
+                <li>Implement a Miller-Rabin primality test function to perform primality testing on potential prime for the key generation process</li>
+                <li>Work out the computation needed for decryption</li>
+                <li>Include a safe modular multiplication and modular exponentiation functions to prevent 32-bit overflow</li>
+                <li>Develop the key generation, encryption, and decryption functions and the main 'wrapper' program</li>
+              </ul>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-sm-2">Resources:</div>
+            <div class="col-md-6"><p>Please contact me through email for access to the private repo with '(Portfolio) PSU-PUBKEYCRYPT private repo access' as the subject line and your reason for wanting access in the body of the email</p></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fixed-bottom py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="m-2 text-left">Copyright &copy; Mukhsia 2020</p>
+                </div>
+                <div class="col-md-6">  
+                    <p class="m-2 text-right">Email: andre.n.mukhsia at gmail dot com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
