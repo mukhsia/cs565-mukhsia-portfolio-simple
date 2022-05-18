@@ -2,12 +2,12 @@
 <html lang="en">
 
 <!-- Bootstrap stylesheet, js, and JQuery -->
-<link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<script src="../src/jquery/jquery.min.js"></script>
-<script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+<link href="../../src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="../../src/jquery/jquery.min.js"></script>
+<script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- css file -->
-<link href="../index.css" rel="stylesheet">
+<link href="../../index.css" rel="stylesheet">
 
 <!-- Tab Title -->
 <head>
@@ -16,41 +16,52 @@
 
 
 <body class="background-page">
-    <!-- Navbar Header -->
-    <nav class="navbar navbar-dark background-navbar">
-        <div class="container">
-        <a class="navbar-brand" href="../index.html">Andre Mukhsia</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark background-navbar">
+        <a class="navbar-brand" href="#">Andre Mukhsia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="../projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" href="../courses.html">Courses</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-0">
+            <a class="nav-link" href="../Resume/Resume_Mukhsia.pdf">Resume</a>
+            </li>
+        </ul>
         </div>
+        <a class="navbar-brand" href="#">Andre Mukhsia</a>
     </nav>
 
     <!-- Body -->
     <div class="container background-body">
         <div class="row py-5">
-            <h3>PSU-PUBKEYCRYPT</h3>
+            <h3>PSU Capstone Project</h3>
         </div>
         <div class="row py-2">
             <div class="col-sm-2">Description:</div>
-            <div class="col-md-6"><p>PSU-PUBKEYCRYPT is a C++ program for a public key encryption scheme. The system must consist of the following three components: A 32-bit public & private key generator, 
-                An Ascii plaintext to ciphertext encryption sub-program, 
-                A ciphertext to Ascii plaintext decryption sub-program.</p></div>
+            <div class="col-md-6"><p>Work with a team and select a project offered by local companies. The company selected was Elemental Live (Now AWS Elemental). The project is to create a program that converts Broadcast Exchange Format (BXF) video metadata into an encoding that is ingestible by Elemental Live video streaming system. 
+                Additionally, create a prototype website/ webapp for uploading videos, generating BXF metadata, and Elemental Live ingestible encoding, and for scheduling Elemental Live video stream. </p></div>
         </div>
         <div class="row py-2">
-            <div class="col-sm-2">Generator:</div>
+            <div class="col-sm-2">Tech Stack:</div>
             <div class="col-md-6"><p>Prompt the user for a random number with which to seed a random number generator. Compute e2 = g^d mod p. Output a public-key p g e2 and the corresponding private key p g d. 
               These keys should be output into two files: pubkey.txt and prikey.txt. The format of these files should be: the first line of the file contains the integer key values and they are only separated by a space, as: p g d.</p></div>
         </div>
         <div class="row py-2">
-            <div class="col-sm-2">Encryption:</div>
-            <div class="col-md-6"><p>As input, the program take as plaintext a standard text file (call the file ptext.txt) and a public-key p g e2 contained in the file pubkey.txt. 
-              A value k is randomly picked from {0,..., p-1}, and is used to compute the following C1 = g∙k mod p
-              C2 = e2∙k∙m mod p
-              Output the ciphertext as pairs of integers C1 and C2 to a text file called ctext.txt. So if the message M = m1 m2 m3… mn then each mi will give a pair C1 and C2. For the graders convenience you can also print this to the screen.</p></div>
+            <div class="col-sm-2">
         </div>
         <div class="row py-2">
-            <div class="col-sm-2">Decryption:</div>
-            <div class="col-md-6"><p>As input, the program take as ciphertext a standard text file (ctext.txt) containing integer pairs C1 and C2 and a private-key p g d contained in the file prikey.txt.
-                Output the decryption of the ciphertext into a file called dtext.txt.
-            </p></div>
         </div>
         <div class="row py-2">
             <div class="col-sm-2">Responsibilities:</div>

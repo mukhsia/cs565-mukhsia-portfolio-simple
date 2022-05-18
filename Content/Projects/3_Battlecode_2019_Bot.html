@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <!-- Bootstrap stylesheet, js, and JQuery -->
-<link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<script src="../src/jquery/jquery.min.js"></script>
-<script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+<link href="../../src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="../../src/jquery/jquery.min.js"></script>
+<script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- css file -->
-<link href="../index.css" rel="stylesheet">
+<link href="../../index.css" rel="stylesheet">
 
 <!-- Tab Title -->
 <head>
@@ -16,11 +17,31 @@
 
 
 <body class="background-page">
-    <!-- Navbar Header -->
-    <nav class="navbar navbar-dark background-navbar">
-        <div class="container">
-        <a class="navbar-brand" href="../index.html">Andre Mukhsia</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark background-navbar">
+        <a class="navbar-brand" href="#">Andre Mukhsia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="../projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" href="../courses.html">Courses</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-0">
+            <a class="nav-link" href="../Resume/Resume_Mukhsia.pdf">Resume</a>
+            </li>
+        </ul>
         </div>
+        <a class="navbar-brand" href="#">Andre Mukhsia</a>
     </nav>
 
     <!-- Body -->
@@ -40,10 +61,10 @@
                 <li>Setup and manage Slack and Trello board. Integrate Github for Slack, Trello for Slack, Travis CI, and Coveralls</li>
                 <li>Setup Travis CI and Coveralls for automated build and code coverage report generation</li>
                 <li>Wrote batch script for building and testing on Windows environment</li>
-                <li>Implemented Bot Combat helper functions (filter visible units on distance, team, (un)attackable range, etc.)</li> 
-                <li>Implemented Bot communication helper function (Report enemy Castle destruction & Communicate next target location)</li> 
+                <li>Implemented Bot combat helper functions (visible unit filters based on distance, team, (un)attackable range, etc.)</li> 
+                <li>Implemented Bot communication helper function (Report enemy Castle destruction & communicate next target location)</li> 
                 <li>Implemented Bot movement helper functions (Calculate enemy castle location, determine direction, etc.)</li>
-                <li>Initial naive farthest valid move movement implementation</li> 
+                <li>Implementation of initial naive farthest valid movement </li> 
                 <li>Crusader and Prophet bot design</li>
                 <li>Defender, Attacker, and Destroyer sub-role design and implementations for Crusader and Prophet bots</li>
                 <li>Implemented Attacker sub-role behaviors towards attacking enemy castles and units en-route</li>
@@ -74,7 +95,6 @@
             </div>
         </div>
     </footer>
-
 
 </body>
 </html>

@@ -5,10 +5,6 @@
     clear: both;
 }
 
-.navbar-resume{
-    color: white;
-}
-
 /*=== Footer text ===*/
 
 footer {
@@ -24,7 +20,7 @@ html {
 /*=== Header/ Jumbotron===*/
 
 .background-jumbotron {
-    background: rgb(42, 174, 235);
+    background: rgb(199, 202, 204);
 }
 
 /*=== Jumbotron text ===*/
